@@ -155,13 +155,9 @@
 </li>
 <li><p>打一段文字，在两秒内删除，会导致Undo（前溯）和Redo都不体现这个操作。解释如下：</p>
 <blockquote>
-<p> <a target="_blank" rel="noopener" href="https://github.com/stefnotch">@stefnotch</a> Mark Text will generate a <code>history</code> after you stop typing for 2 seconds.</p>
-</blockquote>
-<blockquote>
+<p> <a target="_blank" rel="noopener" href="https://github.com/stefnotch">@stefnotch</a> Mark Text will generate a <code>history</code> after you stop typing for 2 seconds.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// for saving memory and improve Mark Text performance</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">historyTimer</span> = <span class="built_in">setTimeout</span>(handler, <span class="number">2000</span>)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p> So when you type some text, but you delete them immediately! it will not    generate a history in Mark Text, it caused <code>CTRL + Z</code> doesn’t do anything.</p>
+<p> So when you type some text, but you delete them immediately! it will not    generate a history in Mark Text, it caused <code>CTRL + Z</code> doesn’t do anything.</p>
 </blockquote>
 </li>
 <li><p><code>ctrl+E</code> 可以实现代码和渲染文字的切换</p>
