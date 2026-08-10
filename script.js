@@ -200,7 +200,9 @@
 
   async function loadContent() {
     try {
-      const response = await fetch("content.json", { cache: "no-cache" });
+      const contentUrl = new URL("content.json", document.baseURI);
+      contentUrl.searchParams.set("v", Date.now().toString());
+      const response = await fetch(contentUrl, { cache: "no-store" });
       if (!response.ok) {
         throw new Error("Unable to load content.json (" + response.status + ")");
       }
