@@ -259,21 +259,6 @@ h3 {
   display: block;
 }
 
-.nav-contact {
-  padding: 9px 17px;
-  border-radius: 99px;
-  background: var(--ink);
-  color: var(--bg);
-  font-size: 0.82rem;
-  font-weight: 750;
-  transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
-.nav-contact:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(30, 29, 25, 0.14);
-}
-
 .hero {
   display: grid;
   min-height: calc(100vh - 76px);
@@ -317,9 +302,7 @@ h3 {
   line-height: 0.91;
 }
 
-.hero h1 em,
-.about-heading h2 em,
-.contact-inner h2 em {
+.hero h1 em {
   font-family: var(--serif);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -353,6 +336,51 @@ h3 {
 
 .hero-intro strong {
   color: var(--ink);
+}
+
+.hero-education {
+  display: grid;
+  max-width: 655px;
+  margin-bottom: 30px;
+  padding-top: 18px;
+  grid-template-columns: 96px 1fr;
+  gap: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.hero-education > p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-education ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+  list-style: none;
+}
+
+.hero-education li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 9px;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.hero-education strong {
+  color: var(--ink);
+}
+
+.hero-education span {
+  color: var(--muted);
 }
 
 .hero-actions,
@@ -624,9 +652,7 @@ h3 {
   margin-bottom: 14px;
 }
 
-.section-heading h2,
-.about-heading h2,
-.contact-inner h2 {
+.section-heading h2 {
   margin-bottom: 0;
   font-size: clamp(2.65rem, 5.1vw, 5rem);
   font-weight: 660;
@@ -855,107 +881,6 @@ h3 {
   color: var(--bg);
 }
 
-.about-section {
-  padding-top: 0;
-}
-
-.about-card {
-  display: grid;
-  padding: clamp(40px, 7vw, 85px);
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: clamp(50px, 8vw, 110px);
-  border: 1px solid #1b1b17;
-  border-radius: 22px;
-  background: var(--lavender);
-  color: #1b1b17;
-}
-
-.about-heading .kicker {
-  color: rgba(27, 27, 23, 0.65);
-}
-
-.about-heading h2 {
-  font-size: clamp(2.5rem, 5vw, 4.9rem);
-}
-
-.about-copy p {
-  color: rgba(27, 27, 23, 0.72);
-}
-
-.about-copy .about-lead {
-  color: #1b1b17;
-  font-size: clamp(1.05rem, 1.8vw, 1.28rem);
-  line-height: 1.7;
-}
-
-.timeline {
-  margin-top: 38px;
-  margin-bottom: 0;
-  padding: 0;
-  border-top: 1px solid rgba(27, 27, 23, 0.35);
-  list-style: none;
-}
-
-.timeline > li {
-  display: grid;
-  padding-block: 17px;
-  align-items: start;
-  grid-template-columns: 80px 1fr;
-  gap: 18px;
-  border-bottom: 1px solid rgba(27, 27, 23, 0.35);
-}
-
-.timeline span {
-  padding-top: 2px;
-  font-family: var(--mono);
-  font-size: 0.63rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.timeline p {
-  margin: 0;
-  font-size: 0.8rem;
-  line-height: 1.55;
-}
-
-.timeline strong {
-  color: #1b1b17;
-}
-
-.contact-section {
-  padding-block: clamp(90px, 13vw, 165px);
-  border-top: 1px solid #1b1b17;
-  background: var(--coral);
-  color: #1b1b17;
-  text-align: center;
-}
-
-.contact-inner .kicker {
-  color: rgba(27, 27, 23, 0.62);
-}
-
-.contact-inner h2 {
-  margin-bottom: 45px;
-  font-size: clamp(3.2rem, 8vw, 7.3rem);
-}
-
-.contact-link {
-  display: inline-flex;
-  padding: 13px 20px;
-  align-items: center;
-  gap: 12px;
-  border-bottom: 2px solid #1b1b17;
-  font-family: var(--mono);
-  font-size: clamp(0.78rem, 1.5vw, 0.95rem);
-  font-weight: 700;
-  transition: gap 180ms ease;
-}
-
-.contact-link:hover {
-  gap: 20px;
-}
-
 .site-footer {
   padding-block: 28px;
   border-top: 1px solid var(--line);
@@ -1108,10 +1033,6 @@ h3 {
     padding-left: 22px;
   }
 
-  .about-card {
-    grid-template-columns: 1fr;
-  }
-
   .footer-inner {
     grid-template-columns: 1fr auto;
   }
@@ -1122,8 +1043,7 @@ h3 {
 }
 
 @media (max-width: 560px) {
-  .brand-name,
-  .nav-contact {
+  .brand-name {
     display: none;
   }
 
@@ -1184,8 +1104,7 @@ h3 {
     margin-bottom: 42px;
   }
 
-  .section-heading h2,
-  .about-heading h2 {
+  .section-heading h2 {
     font-size: clamp(2.45rem, 12vw, 3.6rem);
   }
 
@@ -1226,25 +1145,11 @@ h3 {
     justify-content: flex-start;
   }
 
-  .about-card {
-    padding: 32px 24px;
-    gap: 42px;
-    border-radius: 16px;
+  .hero-education {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-  .timeline > li {
-    grid-template-columns: 62px 1fr;
-  }
-
-  .contact-inner h2 {
-    font-size: clamp(3rem, 15vw, 5rem);
-  }
-
-  .contact-link {
-    width: 100%;
-    justify-content: center;
-    overflow-wrap: anywhere;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
