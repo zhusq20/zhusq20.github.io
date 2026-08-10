@@ -4,9 +4,8 @@ Source for [zhusq20.github.io](https://zhusq20.github.io/), a responsive academi
 
 ## What is here
 
-- Research themes in AI agents, reinforcement learning, and LLM systems
-- Selected papers with links to arXiv and project pages
-- Open-source projects
+- AGI research across technophilosophy, applications, scaling, and infrastructure
+- Papers and open-source projects in one year-by-year index
 - Short bio, education, and contact links
 - Light and dark color themes
 
