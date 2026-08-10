@@ -657,7 +657,7 @@ h3 {
 
 .focus-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -701,6 +701,10 @@ h3 {
 
 .card-coral {
   background: var(--coral);
+}
+
+.card-lavender {
+  background: var(--lavender);
 }
 
 .focus-number {
@@ -1019,9 +1023,6 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .focus-card:last-child {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 800px) {
@@ -1085,10 +1086,6 @@ h3 {
 
   .focus-grid {
     grid-template-columns: 1fr;
-  }
-
-  .focus-card:last-child {
-    grid-column: auto;
   }
 
   .focus-card {
