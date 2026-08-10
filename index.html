@@ -106,9 +106,7 @@
 
           <div class="hero-education" aria-label="Education">
             <p>Education</p>
-            <ul>
-              <li><strong>UIUC CS PhD</strong><span>Aug 2025 – Present</span></li>
-            </ul>
+            <ul id="education-list" aria-live="polite"></ul>
           </div>
 
           <div class="hero-actions">
@@ -159,47 +157,7 @@
           </p>
         </div>
 
-        <div class="focus-grid">
-          <article class="focus-card card-lime reveal">
-            <span class="focus-number">01</span>
-            <div class="focus-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="15"></circle><path d="M24 9v30M9 24h30M14 14l20 20M34 14 14 34"></path></svg>
-            </div>
-            <h3>Technophilosophy</h3>
-            <p>How AGI transforms science, social organization, and human agency.</p>
-            <div class="tag-row"><span>Science &amp; society</span><span>Human agency</span></div>
-          </article>
-
-          <article class="focus-card card-blue reveal reveal-delay">
-            <span class="focus-number">02</span>
-            <div class="focus-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M12 17h24M12 31h24M17 12v24M31 12v24"></path><circle cx="17" cy="17" r="4"></circle><circle cx="31" cy="31" r="4"></circle></svg>
-            </div>
-            <h3>Application</h3>
-            <p>Building vibe systems that connect people with agents and turn human intent into useful action.</p>
-            <div class="tag-row"><span>Vibe systems</span><span>Human-agent</span></div>
-          </article>
-
-          <article class="focus-card card-coral reveal reveal-delay-2">
-            <span class="focus-number">03</span>
-            <div class="focus-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M8 28h8l4-12 7 22 5-15 3 5h5"></path></svg>
-            </div>
-            <h3>Scaling</h3>
-            <p>Understanding and scaling memory, context, and knowledge for increasingly capable, long-horizon agents.</p>
-            <div class="tag-row"><span>Memory &amp; context</span><span>Knowledge</span></div>
-          </article>
-
-          <article class="focus-card card-lavender reveal reveal-delay-2">
-            <span class="focus-number">04</span>
-            <div class="focus-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><rect x="8" y="10" width="13" height="11" rx="2"></rect><rect x="27" y="27" width="13" height="11" rx="2"></rect><path d="M21 15.5h7a5 5 0 0 1 5 5V27M27 32.5h-7a5 5 0 0 1-5-5V21"></path></svg>
-            </div>
-            <h3>Infrastructure</h3>
-            <p>Designing software that connects AGI with productive resources and makes intelligence operational.</p>
-            <div class="tag-row"><span>Software systems</span><span>Productive resources</span></div>
-          </article>
-        </div>
+        <div class="focus-grid" id="research-list" aria-live="polite"></div>
       </section>
 
       <section class="section section-shell work-section" id="work">
@@ -214,84 +172,7 @@
           </div>
         </div>
 
-        <div class="work-index">
-          <div class="work-year reveal">
-            <div class="year-marker"><span>2026</span></div>
-            <div class="work-list">
-              <article class="work-item">
-                <h3>The Many Faces of On-Policy Distillation: Pitfalls, Mechanisms, and Fixes</h3>
-                <div class="work-item-links"><a href="https://arxiv.org/abs/2605.11182" target="_blank" rel="noreferrer">arXiv ↗</a></div>
-              </article>
-              <article class="work-item">
-                <h3>Probing the Knowledge Boundary: An Interactive Agentic Framework for Deep Knowledge Extraction</h3>
-                <div class="work-item-links"><a href="https://arxiv.org/abs/2602.00959" target="_blank" rel="noreferrer">arXiv ↗</a></div>
-              </article>
-              <article class="work-item">
-                <h3>A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents</h3>
-                <div class="work-item-links"><a href="https://arxiv.org/abs/2602.06052" target="_blank" rel="noreferrer">arXiv ↗</a></div>
-              </article>
-              <article class="work-item">
-                <h3>SRT: Accelerating Reinforcement Learning via Speculative Rollout with Tree-Structured Cache</h3>
-                <div class="work-item-links">
-                  <a href="https://arxiv.org/abs/2601.09083" target="_blank" rel="noreferrer">arXiv ↗</a>
-                </div>
-              </article>
-              <article class="work-item">
-                <h3>OpenTinker: Separating Concerns in Agentic Reinforcement Learning</h3>
-                <div class="work-item-links">
-                  <a href="https://arxiv.org/abs/2601.07376" target="_blank" rel="noreferrer">arXiv ↗</a>
-                  <a href="https://github.com/open-tinker/OpenTinker" target="_blank" rel="noreferrer">GitHub ↗</a>
-                </div>
-              </article>
-              <article class="work-item">
-                <h3>Agentic AI Systems Should Be Designed as Marginal Token Allocators</h3>
-                <div class="work-item-links">
-                  <a href="https://zhusq20.github.io/Agent_Token_Economics/paper.pdf" target="_blank" rel="noreferrer">PDF ↗</a>
-                  <a href="https://github.com/zhusq20/Agent_Token_Economics" target="_blank" rel="noreferrer">GitHub ↗</a>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="work-year reveal">
-            <div class="year-marker"><span>2025</span></div>
-            <div class="work-list">
-              <article class="work-item">
-                <h3>Mesh-Attention: A New Communication-Efficient Distributed Attention with Improved Data Locality</h3>
-                <div class="work-item-links"><a href="https://arxiv.org/abs/2512.20968" target="_blank" rel="noreferrer">arXiv ↗</a></div>
-              </article>
-              <article class="work-item">
-                <h3>Multi-Agent Evolve: LLM Self-Improve through Co-evolution</h3>
-                <div class="work-item-links"><a href="https://arxiv.org/abs/2510.23595" target="_blank" rel="noreferrer">arXiv ↗</a></div>
-              </article>
-              <article class="work-item">
-                <h3>GTAlign: Game-Theoretic Alignment of LLM Assistants for Social Welfare</h3>
-                <div class="work-item-links">
-                  <a href="https://arxiv.org/abs/2510.08872" target="_blank" rel="noreferrer">arXiv ↗</a>
-                  <a href="https://github.com/ulab-uiuc/GTAlign" target="_blank" rel="noreferrer">GitHub ↗</a>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="work-year reveal">
-            <div class="year-marker"><span>2024</span></div>
-            <div class="work-list">
-              <article class="work-item">
-                <h3>Efficiently Scaling LLM Reasoning with Certaindex</h3>
-                <div class="work-item-links"><a href="https://arxiv.org/abs/2412.20993" target="_blank" rel="noreferrer">arXiv ↗</a></div>
-              </article>
-              <article class="work-item">
-                <h3>Efficient LLM Scheduling by Learning to Rank</h3>
-                <div class="work-item-links"><a href="https://arxiv.org/abs/2408.15792" target="_blank" rel="noreferrer">arXiv ↗</a></div>
-              </article>
-              <article class="work-item">
-                <h3>LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs</h3>
-                <div class="work-item-links"><a href="https://arxiv.org/abs/2408.07055" target="_blank" rel="noreferrer">arXiv ↗</a></div>
-              </article>
-            </div>
-          </div>
-        </div>
+        <div class="work-index" id="work-list" aria-live="polite"></div>
       </section>
 
     </main>

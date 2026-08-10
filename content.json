@@ -1,0 +1,172 @@
+{
+  "education": [
+    {
+      "program": "UIUC CS PhD",
+      "period": "Aug 2025 – Present"
+    }
+  ],
+  "research": [
+    {
+      "title": "Technophilosophy",
+      "description": "How AGI transforms science, social organization, and human agency.",
+      "tags": ["Science & society", "Human agency"],
+      "color": "lime",
+      "icon": "philosophy"
+    },
+    {
+      "title": "Application",
+      "description": "Building vibe systems that connect people with agents and turn human intent into useful action.",
+      "tags": ["Vibe systems", "Human-agent"],
+      "color": "blue",
+      "icon": "application"
+    },
+    {
+      "title": "Scaling",
+      "description": "Understanding and scaling memory, context, and knowledge for increasingly capable, long-horizon agents.",
+      "tags": ["Memory & context", "Knowledge"],
+      "color": "coral",
+      "icon": "scaling"
+    },
+    {
+      "title": "Infrastructure",
+      "description": "Designing software that connects AGI with productive resources and makes intelligence operational.",
+      "tags": ["Software systems", "Productive resources"],
+      "color": "lavender",
+      "icon": "infrastructure"
+    }
+  ],
+  "papersProjects": [
+    {
+      "year": 2026,
+      "title": "The Many Faces of On-Policy Distillation: Pitfalls, Mechanisms, and Fixes",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2605.11182"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "Probing the Knowledge Boundary: An Interactive Agentic Framework for Deep Knowledge Extraction",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2602.00959"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2602.06052"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "SRT: Accelerating Reinforcement Learning via Speculative Rollout with Tree-Structured Cache",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2601.09083"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "OpenTinker: Separating Concerns in Agentic Reinforcement Learning",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2601.07376"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/open-tinker/OpenTinker"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "Agentic AI Systems Should Be Designed as Marginal Token Allocators",
+      "links": [
+        {
+          "label": "PDF",
+          "url": "https://zhusq20.github.io/Agent_Token_Economics/paper.pdf"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/zhusq20/Agent_Token_Economics"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "Mesh-Attention: A New Communication-Efficient Distributed Attention with Improved Data Locality",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2512.20968"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "Multi-Agent Evolve: LLM Self-Improve through Co-evolution",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2510.23595"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "GTAlign: Game-Theoretic Alignment of LLM Assistants for Social Welfare",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2510.08872"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ulab-uiuc/GTAlign"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Efficiently Scaling LLM Reasoning with Certaindex",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2412.20993"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Efficient LLM Scheduling by Learning to Rank",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2408.15792"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2408.07055"
+        }
+      ]
+    }
+  ]
+}
