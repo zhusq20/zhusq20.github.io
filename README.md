@@ -21,9 +21,18 @@ Then open <http://localhost:8000>.
 
 ## Edit
 
-- Page content: `index.html`
+- Education, research areas, papers, and projects: `content.json`
+- Other page content: `index.html`
 - Visual design and responsive layout: `stylesheet.css`
-- Theme and reveal interactions: `script.js`
+- Content rendering, theme, and reveal interactions: `script.js`
 - Profile image and favicon: `assets/`
 
-The publication list is curated rather than generated automatically. Update it in `index.html` when adding new work.
+## Update the configurable sections
+
+Edit the three arrays in `content.json`:
+
+- `education`: each item needs `program` and `period`.
+- `research`: each item needs `title` and `description`. `tags` is optional. `color` can be `lime`, `blue`, `coral`, or `lavender`; `icon` can be `philosophy`, `application`, `scaling`, or `infrastructure`. Unknown or omitted colors and icons receive safe defaults.
+- `papersProjects`: each item needs `year` and `title`. Add any number of `{ "label", "url" }` objects to `links`.
+
+The page numbers research cards automatically. It also groups papers and projects by year and displays the newest year first, while preserving the configured order within each year. To add or remove an entry, change only `content.json`; no HTML edits are needed.
