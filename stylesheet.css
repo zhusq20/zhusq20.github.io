@@ -858,6 +858,27 @@ h3 {
   color: var(--accent);
 }
 
+.work-item-copy:only-child {
+  grid-column: 1 / -1;
+}
+
+.work-item-authors,
+.work-item-venue {
+  margin: 8px 0 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.work-item-authors {
+  color: var(--muted);
+}
+
+.work-item-authors strong,
+.work-item-venue {
+  color: var(--ink);
+  font-weight: 650;
+}
+
 .work-item-links {
   justify-content: flex-end;
   gap: 8px;

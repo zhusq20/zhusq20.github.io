@@ -8,7 +8,7 @@
   "research": [
     {
       "title": "Technophilosophy",
-      "description": "How AGI transforms science, social organization, and human agency.",
+      "description": "How SI transforms science, social organization, and human agency.",
       "tags": ["Science & society", "Human agency"],
       "color": "lime",
       "icon": "philosophy"
@@ -29,7 +29,7 @@
     },
     {
       "title": "Infrastructure",
-      "description": "Designing software that connects AGI with productive resources and makes intelligence operational.",
+      "description": "Designing software that connects SI with productive resources and makes intelligence operational.",
       "tags": ["Software systems", "Productive resources"],
       "color": "lavender",
       "icon": "infrastructure"
@@ -38,13 +38,46 @@
   "papersProjects": [
     {
       "year": 2026,
+      "title": "From Gradients to Capabilities: Understanding Multi-Teacher On-Policy Distillation",
+      "authors": "Siqi Zhu, Suozhi Huang, Kaixuan Zhang, Yuheng Yang, Zhanyang Jin, Yihang Sun, Jiaxuan You",
+      "venue": "arXiv, 2026",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.02179"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "Agents' Last Exam",
+      "authors": "Yiyou Sun, Xinyang Han, Weichen Zhang, …, Siqi Zhu, …, Dawn Song",
+      "venue": "NeurIPS 2026 Evaluations & Datasets Track",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2606.05405"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "JARVIS-Bench: Benchmarking Personal Intelligence Agents on Long-Horizon Real-User Daily Traces",
+      "authors": "Weizhi Zhang, Wei-Chieh Huang, Yueqing Liang, …, Siqi Zhu, …, Philip S. Yu",
+      "venue": "NeurIPS 2026 Evaluations & Datasets Track",
+      "links": []
+    },
+    {
+      "year": 2026,
       "title": "The Many Faces of On-Policy Distillation: Pitfalls, Mechanisms, and Fixes",
       "links": [
         {
           "label": "arXiv",
           "url": "https://arxiv.org/abs/2605.11182"
         }
-      ]
+      ],
+      "authors": "Siqi Zhu, Xuyan Ye, Hongyu Lu, Weiye Shi, Ge Liu",
+      "venue": "NeurIPS 2026"
     },
     {
       "year": 2026,

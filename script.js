@@ -175,7 +175,29 @@
           links.append(anchor);
         });
 
-        article.append(createElement("h3", "", item.title), links);
+        const copy = createElement("div", "work-item-copy");
+        copy.append(createElement("h3", "", item.title));
+
+        if (typeof item.authors === "string" && item.authors.trim()) {
+          const authors = createElement("p", "work-item-authors");
+          item.authors.split(/(Siqi Zhu)/).forEach(function (name) {
+            authors.append(
+              name === "Siqi Zhu"
+                ? createElement("strong", "", name)
+                : document.createTextNode(name)
+            );
+          });
+          copy.append(authors);
+        }
+
+        if (typeof item.venue === "string" && item.venue.trim()) {
+          copy.append(createElement("p", "work-item-venue", item.venue));
+        }
+
+        article.append(copy);
+        if (links.childElementCount) {
+          article.append(links);
+        }
         workList.append(article);
       });
 

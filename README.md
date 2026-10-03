@@ -4,7 +4,7 @@ Source for [zhusq20.github.io](https://zhusq20.github.io/), a responsive academi
 
 ## What is here
 
-- AGI research across technophilosophy, applications, scaling, and infrastructure
+- SI research across technophilosophy, applications, scaling, and infrastructure
 - Papers and open-source projects in one year-by-year index
 - Short bio, education, and contact links
 - Light and dark color themes
@@ -33,6 +33,6 @@ Edit the three arrays in `content.json`:
 
 - `education`: each item needs `program` and `period`.
 - `research`: each item needs `title` and `description`. `tags` is optional. `color` can be `lime`, `blue`, `coral`, or `lavender`; `icon` can be `philosophy`, `application`, `scaling`, or `infrastructure`. Unknown or omitted colors and icons receive safe defaults.
-- `papersProjects`: each item needs `year` and `title`. Add any number of `{ "label", "url" }` objects to `links`.
+- `papersProjects`: each item needs `year` and `title`. Optional `authors` and `venue` strings appear below the title; Siqi Zhu is highlighted in the author list. Add any number of `{ "label", "url" }` objects to `links`, or use an empty array when a paper is not yet public.
 
 The page numbers research cards automatically. It also groups papers and projects by year and displays the newest year first, while preserving the configured order within each year. To add or remove an entry, change only `content.json`; no HTML edits are needed.
